@@ -33,6 +33,6 @@ At the [IBM Cloud Resources List](https://cloud.ibm.com/resources) click on the 
 
 ### Using the OpenShift CLI (oc)
 
-[Download the OpenShift CLI (oc)](https://mirror.openshift.com/pub/openshift-v4/clients/oc/) that matches your local operating system and cluster version. For information about how to install the CLI, [see the docs](https://cloud.ibm.com/docs/openshift?topic=openshift-openshift-cli#cli_oc).
+[Download the OpenShift CLI (oc)](https://mirror.openshift.com/pub/openshift-v4/clients/oc/) that matches your local operating system and cluster version. For information about how to install the CLI, [see the docs](https://cloud.ibm.com/docs/openshift?topic=openshift-openshift-cli#cli_oc). For OpenShift 4.5 check [this link](https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.5/).
 
 
