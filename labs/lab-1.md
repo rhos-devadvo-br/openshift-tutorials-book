@@ -30,6 +30,8 @@ Then create a new application inside the project using the "new-app" instruction
 oc new-app 'https://github.com/rhos-devadvo-br/pymongo-demo.git' --name=web
 ```
 
+Note: the new-app instruction create a Deployment, if you desire to create a DeploymentConfig pass the --as-deployment-config flag.
+
 OpenShift first checks for a Dockerfile at the root of the target repository. Because there is no Dockerfile present, OpenShift proceeds to automatically detect that this is a Python application and then fetch the tailored Python base image maintained by Red Hat.
 
 The output of the new-app command should be similar to:
@@ -157,3 +159,7 @@ The deployed application is a simple web page that show saved notes written in a
     <img width="100%" style="border: 1px solid black" src="../docs/imgs/deployed-app.png" alt='deployed-app'>
 </div>
 <br>
+
+<hr>
+
+[Go to LAB 2: Scaling pods and adding a self-healing database layer with a Template](./lab-2.md)
