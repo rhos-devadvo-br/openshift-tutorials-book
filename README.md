@@ -1,6 +1,6 @@
 <br>
 <div align="center">
-    <img width="50%" src="./docs/imgs/rhos-logo.png" alt='video'>
+    <img width="50%" src="./docs/imgs/rhos-logo.png" alt='rhos-logo'>
 </div>
 <br>
 <br>
@@ -10,8 +10,8 @@
 
 ## Chapters
 
-1. [What is Red Hat OpenShift?](./1-what-is-openshift.md)
-2. [Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./2-roks-at-ibm-cloud.md)
+1. [What is Red Hat OpenShift?](./book/1-what-is-openshift.md)
+2. [Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./book/2-roks-at-ibm-cloud.md)
 3. The OpenShift web console
 4. The IBM CLI Kubernetes and OpenShift add-on
 5. The OpenShift command-line interface
@@ -20,7 +20,7 @@
 
 ## Labs
 
-- LAB 1: Creating an OpenShift Project and deploying a web application
+- [LAB 1: Creating an OpenShift Project and deploying a web application](./labs/lab-1.md)
 - LAB 2: Using OpenShift source-to-image (s2i)
 - LAB 3: Integrating IBM Continuous Delivery with OpenShift
 - LAB 4: Aggregating application logs with LogDNA
