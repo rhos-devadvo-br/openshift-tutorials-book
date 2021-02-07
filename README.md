@@ -10,8 +10,8 @@
 
 ## Chapters
 
-1. [What is Red Hat OpenShift?](./what-is-openshift.md)
-2. [Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./roks-at-ibmcloud.md)
+1. [What is Red Hat OpenShift?](./1-what-is-openshift.md)
+2. [Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./2-roks-at-ibmcloud.md)
 3. The OpenShift web console
 4. The IBM CLI Kubernetes and OpenShift add-on
 5. The OpenShift command-line interface
