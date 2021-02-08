@@ -22,8 +22,8 @@
 
 - [LAB 1: Creating an OpenShift Project and deploying a web application](./labs/lab-1.md)
 - [LAB 2: Scaling pods and adding a self-healing database layer with a Template](./labs/lab-2.md)
+- [LAB 3: DevOps with OpenShift source-to-image (s2i) and GitHub webhooks](./labs/lab-3.md)
 
-- LAB 3: DevOps with OpenShift source-to-image (s2i)
 - LAB 4: DevOps with IBM Continuous Delivery
 
 - LAB 4: The Canary release approach

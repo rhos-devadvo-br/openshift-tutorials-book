@@ -1,12 +1,14 @@
 <br>
 <div align="center">
-    <img width="50%" src="../docs/imgs/rhos-logo.png" alt='rhos-logo'>
+    <a href="../README.md">
+        <img width="50%" src="../docs/imgs/rhos-logo.png" alt='rhos-logo'>
+    </a>
 </div>
 <br>
 <br>
 <br>
 
-# 2. Red Hat OpenShift Kubernetes Service at IBM Cloud
+# 2. Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud
 
 ## 2.1. Multicloud Red Hat OpenShift offerings
 

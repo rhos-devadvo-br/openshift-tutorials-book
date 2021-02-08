@@ -1,6 +1,8 @@
 <br>
 <div align="center">
-    <img width="50%" src="../docs/imgs/rhos-logo.png" alt='rhos-logo'>
+    <a href="../README.md">
+        <img width="50%" src="../docs/imgs/rhos-logo.png" alt='rhos-logo'>
+    </a>
 </div>
 <br>
 <br>

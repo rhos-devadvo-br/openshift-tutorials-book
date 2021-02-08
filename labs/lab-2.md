@@ -1,6 +1,8 @@
 <br>
 <div align="center">
-    <img width="50%" src="../docs/imgs/rhos-logo.png" alt='rhos-logo'>
+    <a href="../README.md">
+        <img width="50%" src="../docs/imgs/rhos-logo.png" alt='rhos-logo'>
+    </a>
 </div>
 <br>
 <br>
@@ -143,4 +145,4 @@ After executing the command above, all pods in the "web" Deployment will be re-c
 
 [Go to LAB 1: Creating an OpenShift Project and deploying a web application](./lab-1.md)
 
-[Go to LAB 3: --- ](./lab-3.md)
+[Go to LAB 3: DevOps with OpenShift source-to-image (s2i) and GitHub webhooks](./lab-3.md)
