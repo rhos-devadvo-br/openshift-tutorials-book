@@ -140,6 +140,9 @@ After executing the command above, all pods in the "web" Deployment will be re-c
 </div>
 <br>
 
+## 5. Wrapping up
+
+You can now add new notes at the web interface and then delete the mongodb pods. You'll notice that OpenShift re-create the destroyed pods and the data stored at the PVC continues intact.
 
 <hr>
 
