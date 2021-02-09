@@ -34,7 +34,7 @@ oc new-app 'https://github.com/rhos-devadvo-br/pymongo-demo.git' --name=web
 
 Note: the new-app instruction create a Deployment, if you desire to create a DeploymentConfig pass the --as-deployment-config flag.
 
-OpenShift first checks for a Dockerfile at the root of the target repository. Because there is no Dockerfile present, OpenShift proceeds to automatically detect that this is a Python application and then fetch the tailored Python base image maintained by Red Hat.
+OpenShift automatically detect that this is a Python application and then fetch the tailored Python base image maintained by Red Hat. If you want to use the custom Dockerfile provided in the source code, you need to pass the "--strategy=docker" parameter to the *new-app* instruction.
 
 The output of the new-app command should be similar to:
 
@@ -62,6 +62,12 @@ The output of the new-app command should be similar to:
     Application is not exposed. You can expose services to the outside world by executing one or more of the commands below:
      'oc expose svc/web' 
     Run 'oc status' to view your app.
+```
+
+You can check the logs of the Build process in real-time using the logs command:
+
+```bash
+oc logs -f bc/web
 ```
 
 ### 2.3. Exposing a public Route for the App

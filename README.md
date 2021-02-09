@@ -26,12 +26,13 @@
 
 - LAB 4: DevOps with Tekton Pipelines
 
-- LAB 5: The Canary release approach
-- LAB 6: The Blue-Green release approach
+- [LAB 5: The Canary and Blue-Green release approaches](./labs/lab-5.md)
 
-- LAB 7: Pod auto-scaling in Deployments and DeploymentConfigs
+- LAB 6: Pod auto-scaling in Deployments and DeploymentConfigs
 
-- LAB 8: Aggregating OpenShift application logs with LogDNA
+- LAB 7: Aggregating OpenShift application logs with LogDNA
 
-- LAB 9: Managing OpenShift worker nodes auto-scaling at IBM Cloud
-- LAB 10: Managing OpenShift TLS Routes and DNS with IBM Cloud Internet Services (CIS)
+- LAB 8: Managing OpenShift worker nodes auto-scaling at IBM Cloud
+- LAB 9: Managing OpenShift TLS Routes and DNS with IBM Cloud Internet Services (CIS)
+
+- LAB 10: Service Meshes
