@@ -82,4 +82,4 @@ Note: if your GitHub repository is private, you'll need to configure a SourceSec
 
 [Go to LAB 2: Scaling pods and adding a self-healing database layer with a Template](./lab-2.md)
 
-[Go to LAB 4: --- ](./lab-4.md)
+[Go to LAB 4: DevOps with Classic Pipelines ](./lab-4.md)
