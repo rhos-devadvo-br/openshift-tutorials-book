@@ -179,4 +179,4 @@ After these two commands are executed, each time you access the public route one
 
 [Go to LAB 4: DevOps with Tekton Pipelines](./lab-4.md)
 
-[Go to LAB 6: --](./lab-6.md)
+[Go to LAB 6: Horizontal Pod auto-scaling](./lab-6.md)

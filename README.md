@@ -28,7 +28,7 @@
 
 - [LAB 5: The Canary and Blue-Green release approaches](./labs/lab-5.md)
 
-- LAB 6: Pod auto-scaling in Deployments and DeploymentConfigs
+- [LAB 6: Horizontal Pod auto-scaling](./labs/lab-6.md)
 
 - LAB 7: Aggregating OpenShift application logs with LogDNA
 
