@@ -204,7 +204,7 @@ oc  get route el-event-listener --template='http://{{.spec.host}}'
 
 And now we only need to create a GitHub webhook for this URL. If you don't remember the steps, you can check them again in [lab 3](./lab-3.md).
 
-After creating the webhook, a new `PipelineRun` is instantly created. You can check that in the `Pipelines`>`Pipeline Runs` section of OpenShift web console, or execute `tkn pipelinerun list` to see it. Then you can check the logs with `tkn pipelinerun logs <your-pipeline-name>`.
+After creating the webhook, a new `PipelineRun` is instantly created. You can check that in the `Pipelines`>`Pipeline Runs` section of OpenShift web console, or execute `tkn pipelinerun list` to see it. Then you can check the logs with `tkn pipelinerun logs <your-pipeline-name>`. You can now try pushing a new update to your repository to see another new `PipelineRun`.
 
 ### 5. Wrapping up
 
