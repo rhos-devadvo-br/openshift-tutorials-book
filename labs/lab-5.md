@@ -103,10 +103,12 @@ The second task is the `apply-manifests` task, which will apply the manifest fil
 
 And the third task is `update-deployment`, which will patch a deployment with our newly created image. [The yaml file for it can be found here](./resources/lab-5/tasks/update-deployment.yml). It receives as parameters `deployment`, the name of the deployment, and `IMAGE`, the name of the image to deploy.
 
-You can create the three tasks in your cluster with one command:
+You can create the three tasks in your cluster with the commands:
 
 ```
-oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-5/tasks
+oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/tasks/test-app.yml
+oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/tasks/apply-manifests.yml
+oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/tasks/update-deployment.yml
 ```
 
 ### 3.2. Creating a PVC
@@ -116,7 +118,7 @@ Our pipeline execution will need to store resources such as the repository sourc
 You can create it with:
 
 ```
-oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-5/tekton-pvc.yml
+oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/tekton-pvc.yml
 ```
 
 ### 3.3. Creating the pipeline
@@ -141,7 +143,7 @@ Note that we will not need the `manifest_dir` parameter for the `apply-manifests
 Create the pipeline:
 
 ```
-oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-5/pipeline
+oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/pipeline/pipeline.yml
 ```
 
 Now, our pipeline is ready to be runned. We will first run it manually, then we will create a trigger for running it whenever the git repository updates.
@@ -180,7 +182,10 @@ To create a [Tekton trigger](https://tekton.dev/docs/triggers/), we will need th
 In our case, the event we will listen to is a GitHub webhook that triggers on a `push`, and we will use the name of the repository and the git revision, [which come from the event](https://docs.github.com/en/developers/webhooks-and-events/webhook-events-and-payloads#push), as parameters to the pipeline. The resources we will use [can be found here](./resources/lab-5/trigger), and you can create them with:
 
 ```
-oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-5/trigger
+oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/trigger/pipeline.template.yml
+oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/trigger/binding.yml
+oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/trigger/trigger.yml
+oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/trigger/event-listener.yml
 ```
 
 After creating, a pod will start running in your project, which will already be listening for events. you can check that running `oc get pods`.
