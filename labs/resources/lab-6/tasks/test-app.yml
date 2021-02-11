@@ -1,0 +1,15 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: test-app
+spec:
+  workspaces:
+    - name: source
+  steps:
+    - name: test
+      image: ekidd/rust-musl-builder
+      workingDir: /workspace/source
+      script: |
+        echo "Starting tests..."
+        cargo test
+        echo -----------------------------------

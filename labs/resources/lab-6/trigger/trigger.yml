@@ -1,0 +1,10 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: Trigger
+metadata:
+  name: pipeline-trigger
+spec:
+  serviceAccountName: pipeline
+  bindings:
+    - ref: pipeline-trigger-binding
+  template:
+    name: pipeline-template
