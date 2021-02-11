@@ -165,7 +165,7 @@ Note that we pass each pipeline parameter with the `-p` option, and we specify t
 You can now follow along the logs as the pipeline executes. Once it ends, the app will be already deployed and you can access it. To get its route, run:
 
 ```
-oc get route pipelines-demo --template='http://{{.spec.host}}
+oc get route pipelines-demo --template='http://{{.spec.host}}'
 ```
 
 You can also check the `PipelineRun` and its logs out on the OpenShift web console, under the `Pipelines`>`Pipeline Runs` section.
@@ -182,7 +182,7 @@ To create a [Tekton trigger](https://tekton.dev/docs/triggers/), we will need th
 In our case, the event we will listen to is a GitHub webhook that triggers on a `push`, and we will use the name of the repository and the git revision, [which come from the event](https://docs.github.com/en/developers/webhooks-and-events/webhook-events-and-payloads#push), as parameters to the pipeline. The resources we will use [can be found here](./resources/lab-5/trigger), and you can create them with:
 
 ```
-oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/trigger/pipeline.template.yml
+oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/trigger/pipeline-template.yml
 oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/trigger/binding.yml
 oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/trigger/trigger.yml
 oc create -f https://raw.githubusercontent.com/rhos-devadvo-br/ibmcloud-ocp-101/main/labs/resources/lab-5/trigger/event-listener.yml
@@ -199,7 +199,7 @@ oc expose svc el-event-listener
 To get the URL for the event listener you can run:
 
 ```
-oc  get route el-event-listener --template='http://{{.spec.host}}
+oc  get route el-event-listener --template='http://{{.spec.host}}'
 ```
 
 And now we only need to create a GitHub webhook for this URL. If you don't remember the steps, you can check them again in [lab 3](./lab-3.md).
@@ -212,10 +212,9 @@ With that, you now know how to work with Tekton pipelines on OpenShift, and you 
 
 ## Additional resources
 
-getting webhook - https://docs.openshift.com/container-platform/4.6/pipelines/creating-applications-with-cicd-pipelines.html#adding-triggers_creating-applications-with-cicd-pipelines
-
-- Red Hat OpenShift docs: https://docs.openshift.com/container-platform/4.6/
-- Interactive OpenShift Pipelines lab: https://learn.openshift.com/middleware/pipelines/
+- [Red Hat OpenShift docs](https://docs.openshift.com/container-platform/4.6/)
+- [Using triggers on OpenShift](https://docs.openshift.com/container-platform/4.6/pipelines/creating-applications-with-cicd-pipelines.html#adding-triggers_creating-applications-with-cicd-pipelines)
+- [Interactive OpenShift Pipelines lab](https://learn.openshift.com/middleware/pipelines/)
 
 <hr>
 
