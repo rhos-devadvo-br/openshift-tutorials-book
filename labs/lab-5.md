@@ -97,16 +97,16 @@ Let's create a pipeline for our app. The app is a Rust web server that displays 
 
 Some tasks already come configured in a OpenShift, these we call `ClusterTasks`. In our pipeline we will use two of them: the `git-clone` task, which clones a git repository, and the `buildah` task, which builds an image and pushes it to an image registry. The other tasks we will use will have to be created.
 
-The first task we will create is `test-app`, which will simply execute the `cargo test` command to test our Rust app. [The yaml file for it can be found here](./resources/lab-6/tasks/test-app.yml). Note that each task can run in its own image, and in this one we are using a Rust image.
+The first task we will create is `test-app`, which will simply execute the `cargo test` command to test our Rust app. [The yaml file for it can be found here](./resources/lab-5/tasks/test-app.yml). Note that each task can run in its own image, and in this one we are using a Rust image.
 
-The second task is the `apply-manifests` task, which will apply the manifest files, such as `deployment.yml` and `service.yml`, found in our app repository. [The yaml file for it can be found here](./resources/lab-6/tasks/apply-manifests.yml). It receives as parameter `manifest_dir`, the directory where the manifest files are located, which is by default `k8s`.
+The second task is the `apply-manifests` task, which will apply the manifest files, such as `deployment.yml` and `service.yml`, found in our app repository. [The yaml file for it can be found here](./resources/lab-5/tasks/apply-manifests.yml). It receives as parameter `manifest_dir`, the directory where the manifest files are located, which is by default `k8s`.
 
-And the third task is `update-deployment`, which will patch a deployment with our newly created image. [The yaml file for it can be found here](./resources/lab-6/tasks/update-deployment.yml). It receives as parameters `deployment`, the name of the deployment, and `IMAGE`, the name of the image to deploy.
+And the third task is `update-deployment`, which will patch a deployment with our newly created image. [The yaml file for it can be found here](./resources/lab-5/tasks/update-deployment.yml). It receives as parameters `deployment`, the name of the deployment, and `IMAGE`, the name of the image to deploy.
 
 You can create the three tasks in your cluster with one command:
 
 ```
-oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-6/tasks
+oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-5/tasks
 ```
 
 ### 3.2. Creating a PVC
@@ -116,7 +116,7 @@ Our pipeline execution will need to store resources such as the repository sourc
 You can create it with:
 
 ```
-oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-6/tekton-pvc.yml
+oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-5/tekton-pvc.yml
 ```
 
 ### 3.3. Creating the pipeline
@@ -129,7 +129,7 @@ Now that we have setup our tasks, we can finally create our pipeline. We will na
 4. `apply-manifests` (custom task); and
 5. `update-deployment` (custom task).
 
-[The yaml file for the pipeline can be found here](./resources/lab-6/pipelines/pipeline.yml). We define each task parameter as a parameter for the pipeline as well:
+[The yaml file for the pipeline can be found here](./resources/lab-5/pipelines/pipeline.yml). We define each task parameter as a parameter for the pipeline as well:
 
 - `deployment-name`: for `update-deployment`
 - `git-url`: for `fetch-repository`
@@ -141,7 +141,7 @@ Note that we will not need the `manifest_dir` parameter for the `apply-manifests
 Create the pipeline:
 
 ```
-oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-6/pipeline
+oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-5/pipeline
 ```
 
 Now, our pipeline is ready to be runned. We will first run it manually, then we will create a trigger for running it whenever the git repository updates.
@@ -177,10 +177,10 @@ To create a [Tekton trigger](https://tekton.dev/docs/triggers/), we will need th
 - `Trigger`: references to which `PipelineTemplate` the `TriggerBinding` is linked;
 - `EventListener`: will run a pod that stays listening for events and triggers a determined `Trigger` when the event occurs.
 
-In our case, the event we will listen to is a GitHub webhook that triggers on a `push`, and we will use the name of the repository and the git revision, [which come from the event](https://docs.github.com/en/developers/webhooks-and-events/webhook-events-and-payloads#push), as parameters to the pipeline. The resources we will use [can be found here](./resources/lab-6/trigger), and you can create them with:
+In our case, the event we will listen to is a GitHub webhook that triggers on a `push`, and we will use the name of the repository and the git revision, [which come from the event](https://docs.github.com/en/developers/webhooks-and-events/webhook-events-and-payloads#push), as parameters to the pipeline. The resources we will use [can be found here](./resources/lab-5/trigger), and you can create them with:
 
 ```
-oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-6/trigger
+oc create -f https://github.com/rhos-devadvo-br/ibmcloud-ocp-101/tree/main/labs/resources/lab-5/trigger
 ```
 
 After creating, a pod will start running in your project, which will already be listening for events. you can check that running `oc get pods`.
@@ -217,7 +217,3 @@ getting webhook - https://docs.openshift.com/container-platform/4.6/pipelines/cr
 [Go to LAB 4: Devops with Classic Pipelines](./lab-4.md)
 
 [Go to LAB 6: The Canary and Blue-Green release approaches](./lab-6.md)
-
-```
-
-```
