@@ -122,6 +122,14 @@ The `kubectl` and `oc` executables will be unpacked to the current directory. To
 mv ./oc /usr/local/bin/oc && mv ./kubectl /usr/local/bin/kubectl && echo $PATH
 ```
 
+### 3.3.2. For Mac users:
+
+TODO
+
+### 3.3.3. For Windows™ users:
+
+TODO
+
 To check if the OpenShift command-line client (oc) was installed correctly, run:
 
 ```bash
@@ -142,18 +150,21 @@ kubectl version
 
 Example output: 
 
-    Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.0", GitCommit:"aaa9ca377e9816a2501ce3f5dda3f889618b6a37", GitTreeState:"clean", BuildDate:"2021-02-20T03:33:06Z", GoVersion:"go1.15.5", Compiler:"gc", Platform:"linux/amd64"}
-
-### 3.3.2. For Mac users:
-
-TODO
-
-### 3.3.3. For Windows™ users:
-
-TODO
+    Client Version: version.Info {
+        Major:"1", Minor:"19", GitVersion:"v1.19.0",
+        GitCommit:"aaa9ca377e9816a2501ce3f5dda3f889618b6a37",
+        GitTreeState:"clean", BuildDate:"2021-02-20T03:33:06Z",
+        GoVersion:"go1.15.5", Compiler:"gc", Platform:"linux/amd64"
+    }
 
 <hr>
 
-# Extra content
+<hr>
 
-* [Red Hat OpenShift on IBM Cloud CLI commands](https://cloud.ibm.com/docs/openshift?topic=openshift-kubernetes-service-cli)
+Extra content:
+
+* Red Hat OpenShift on IBM Cloud CLI commands: https://cloud.ibm.com/docs/openshift?topic=openshift-kubernetes-service-cli
+
+[Go to Chapter 2: Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./2-roks-at-ibm-cloud.md)
+
+<!--[Go to Chapter 4: xxx](./4-xxx.md)-->

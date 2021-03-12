@@ -21,7 +21,7 @@
 - [LAB 1: Creating an OpenShift Project and deploying a web application](./labs/lab-1.md)
 - [LAB 2: Scaling pods and adding a self-healing database layer with a Template](./labs/lab-2.md)
 - [LAB 3: DevOps with OpenShift source-to-image (s2i) and GitHub webhooks](./labs/lab-3.md)
-- [LAB 4: DevOps with Classic Pipelines]('./labs-lab-4.md)
+- [LAB 4: DevOps with Classic Pipelines]('./labs/lab-4.md)
 - [LAB 5: Native pipelines with Tekton](./labs/lab-5.md)
 - [LAB 6: The Canary and Blue-Green release approaches](./labs/lab-6.md)
 - [LAB 7: Horizontal Pod auto-scaling](./labs/lab-7.md)

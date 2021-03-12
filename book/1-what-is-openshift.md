@@ -41,4 +41,8 @@ Red Hat OpenShift clusters can be "managed" or "self-managed". Managed cluster's
 
 OpenShift clusters have a monthly license cost attached, while the compute and network infrastructure costs are paid to a specific cloud provider, and vary depending on the allocated resources and specific provider's price plans for infrastructure.
 
-You can learn how to provision an OpenShift cluster on IBM Cloud at [chapter 2 of this book](./2-roks-at-ibm-cloud.md).
+<hr>
+
+[Go to Summary](../README.md)
+
+[Go to Chapter 2: Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./2-roks-at-ibm-cloud.md)
