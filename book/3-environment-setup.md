@@ -73,7 +73,9 @@ ibmcloud plugin install container-registry
 ibmcloud plugin install kubernetes-service
 ```
 
-Check if the plugins were installed correctly using plugin list:
+## 3.3. Checking the plugins installation
+
+To check if the plugins are installed, use the "plugin list" instruction:
 
 ```bash
 ibmcloud plugin list
@@ -131,11 +133,13 @@ brew install kubernetes-cli
 brew install openshift-cli
 ```
 
-If you prefer to download from the mirror, you can follow the exact instructions as for [Linux users](#331-for-linux-users).
+If you prefer to download from the Red Hat mirror, you can follow the exact instructions for [Linux users](#331-for-linux-users).
 
 ### 3.3.3. For Windows™ users:
 
-TODO
+(SOON)
+
+## 3.4. Checking the OpenShift and Kubernetes clients installation
 
 To check if the OpenShift command-line client (oc) was installed correctly, run:
 
