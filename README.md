@@ -6,17 +6,15 @@
 <br>
 <br>
 
-# Red Hat OpenShift Hands-On Labs Book
+# Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud: The Tutorials Book
 
 ## Book Chapters
 
 1. [What is Red Hat OpenShift?](./book/1-what-is-openshift.md)
 2. [Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./book/2-roks-at-ibm-cloud.md)
-3. Installing the IBM CLI Kubernetes and OpenShift add-on
-4. The OpenShift Web Console
-5. Installing the OpenShift CLI
-6. The OpenShift Object Model
-7. OpenShift Templates and Operators
+3. [Environment Setup](./book/3-environment-setup.md)
+4. (SOON) The OpenShift Object Model
+5. (SOON) OpenShift Templates and Operators
 
 ## Hands-On Labs
 
@@ -28,9 +26,12 @@
 - [LAB 6: The Canary and Blue-Green release approaches](./labs/lab-6.md)
 - [LAB 7: Horizontal Pod auto-scaling](./labs/lab-7.md)
 
-- LAB 8: Aggregating OpenShift application logs with LogDNA
+- (SOON) LAB 8: Aggregating OpenShift application logs with LogDNA
 
-- LAB 9: Managing OpenShift worker nodes auto-scaling at IBM Cloud
-- LAB 10: Managing OpenShift TLS Routes and DNS with IBM Cloud Internet Services (CIS)
+- (SOON) LAB 9: Managing OpenShift worker nodes auto-scaling at IBM Cloud
 
-- LAB 11: Service Meshes
+- (SOON) LAB 10: Managing OpenShift TLS Routes and DNS with IBM Cloud Internet Services (CIS)
+
+- (SOON) LAB 11: Service Meshes
+
+- (SOON) LAB 12: Managing cluster access with IBM Cloud IAM

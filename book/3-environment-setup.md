@@ -81,13 +81,12 @@ ibmcloud plugin list
 
 Example output:
 
-```bash
-Listing installed plug-ins...
+    Listing installed plug-ins...
 
-Plugin Name                            Version   Status   Private endpoints supported   
-container-registry                     0.1.514            false   
-container-service/kubernetes-service   1.0.233            false
-```
+    Plugin Name                            Version   Status   Private endpoints supported   
+    container-registry                     0.1.514            false   
+    container-service/kubernetes-service   1.0.233            false
+
 
 ## 3.3. Installing the Kubernetes (kubectl) and OpenShift (oc) command-line clients
 
@@ -117,7 +116,7 @@ After downloading the correct .tar file, unpack it:
 tar -xvf oc.tar.gz
 ```
 
-The `kubectl` and `oc` executables will be unpacked to the current directory. To add these binary files into your PATH system variable, execute the following:
+The `kubectl` and `oc` executables will be unpacked to the current directory. To add these binary files into your PATH system variable, execute the following (you may need *sudo* or administrator permissions):
 
 ```bash
 mv ./oc /usr/local/bin/oc && mv ./kubectl /usr/local/bin/kubectl && echo $PATH
@@ -143,9 +142,7 @@ kubectl version
 
 Example output: 
 
-```bash
-Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.0", GitCommit:"aaa9ca377e9816a2501ce3f5dda3f889618b6a37", GitTreeState:"clean", BuildDate:"2021-02-20T03:33:06Z", GoVersion:"go1.15.5", Compiler:"gc", Platform:"linux/amd64"}
-```
+    Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.0", GitCommit:"aaa9ca377e9816a2501ce3f5dda3f889618b6a37", GitTreeState:"clean", BuildDate:"2021-02-20T03:33:06Z", GoVersion:"go1.15.5", Compiler:"gc", Platform:"linux/amd64"}
 
 ### 3.3.2. For Mac users:
 

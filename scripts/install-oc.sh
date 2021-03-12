@@ -1,6 +1,0 @@
-echo Downloading OpenShift CLI from mirror.openshift.com...
-wget https://mirror.openshift.com/pub/openshift-v4/clients/oc/4.5/linux/oc.tar.gz
-echo Download complete. Unpacking tar...
-tar -xvf oc.tar.gz
-echo Finished. `oc` and `kubectl` available at the current directory.
-
