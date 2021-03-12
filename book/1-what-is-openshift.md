@@ -22,7 +22,7 @@ The main difference from Kubernetes is that OpenShift is a full fledged product 
 
 <br>
 <div align="center">
-    <img width="60%" style="1px solid black" src="../docs/imgs/rhos-components.png" alt='rhos-components'>
+    <img width="80%" style="1px solid black" src="../docs/imgs/rhos-components.png" alt='rhos-components'>
 </div>
 <br>
 
@@ -32,7 +32,7 @@ OpenShift also has an ebedded security layer based on SELinux, that disallows th
 
 Besides security and usability, OpenShift is heavily gueared to a DevOps culture, supporting native container image management with the use of an internal Container Image Registry and Image Streams—another type of resource in the OpenShift object model.
 
->"As a catch-all container platform, Red Hat OpenShift is more than a software product. It can be the key to adopting a DevOps culture—automating routine operational tasks and standardizing environments across an app’s life cycle." - Red Hat
+>"As a catch-all container platform, Red Hat OpenShift is more than a software product. It can be the key to adopting a DevOps culture, automating routine operational tasks and standardizing environments across an app’s life cycle." — Red Hat
 
 # 1.3. Where can you use it?
 
