@@ -41,8 +41,6 @@ When provisioning the OpenShift cluster at IBM Cloud, you'll setup the following
 
 Access the [IBM Cloud Resources List](https://cloud.ibm.com/resources) and click on the previously created cluster. You'll be redirected to the managed cluster administration page at IBM Cloud, where you can check access, overview worker node's status, create new worker pools, install add-ons and attach IBM DevOps solutions to your cluster.
 
-### 2.3.1. Using the Web Console
-
 To access the OpenShift Web Console you can simply click on the blue button, as indicated on the image below.
 
 <br>
@@ -50,9 +48,3 @@ To access the OpenShift Web Console you can simply click on the blue button, as 
     <img width="90%" style="1px solid black" src="../docs/imgs/accessing-web-console.png" alt='acessing-web-console'>
 </div>
 <br>
-
-### 2.3.2. Using the OpenShift CLI (oc)
-
-[Download the OpenShift CLI (oc)](https://mirror.openshift.com/pub/openshift-v4/clients/oc/) that matches your local operating system and cluster version. For information about how to install the CLI, [see the docs](https://cloud.ibm.com/docs/openshift?topic=openshift-openshift-cli#cli_oc). To download the oc and kubectl for OpenShift 4.5 on Linux systems you can simply execute the [install-oc.sh](./scripts/install-oc.sh) shell script.
-
-
