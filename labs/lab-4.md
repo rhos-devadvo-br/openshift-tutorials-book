@@ -8,7 +8,7 @@
 <br>
 <br>
 
-# LAB 4: DevOps with Classic Pipelines
+# LAB 4: DevOps with IBM Cloud Continuous Delivery classic Pipelines
 
 ## 1. Introduction
 
@@ -76,4 +76,4 @@ And now you have complete the lab.
 
 [Go to LAB 3: DevOps with OpenShift source-to-image (s2i) and GitHub webhooks](./lab-3.md)
 
-[Go to LAB 5: OpenShift Pipelines](./lab-5.md)
+[Go to LAB 5: DevOps with OpenShift native Tekton pipelines](./lab-5.md)
