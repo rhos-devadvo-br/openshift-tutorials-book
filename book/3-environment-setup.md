@@ -79,7 +79,7 @@ Check if the plugins were installed correctly using plugin list:
 ibmcloud plugin list
 ```
 
-The output should be like the following:
+Example output:
 
 ```bash
 Listing installed plug-ins...
@@ -89,13 +89,63 @@ container-registry                     0.1.514            false
 container-service/kubernetes-service   1.0.233            false
 ```
 
-## 3.3. Installing the Kubernetes client (kubectl)
+## 3.3. Installing the Kubernetes (kubectl) and OpenShift (oc) command-line clients
 
-[Download the OpenShift CLI (oc)](https://mirror.openshift.com/pub/openshift-v4/clients/oc/) that matches your local operating system and cluster version. For detailed information about how to install the OpenShift client, [see the docs](https://cloud.ibm.com/docs/openshift?topic=openshift-openshift-cli#cli_oc).
+Red Hat OpenShift at IBM Cloud is available in different versions (not always the latest release by Red Hat). To check the release history, visit the [IBM official documentation](https://cloud.ibm.com/docs/openshift?topic=openshift-openshift_versions#openshift_release_history).
+
+Currently supported versions of Red Hat OpenShift at IBM Cloud:
+
+    Latest: 4.6 (requires Kubernetes 1.19)
+    Default: 4.5 (requires Kubernetes 1.18)
+
+Deprecated and unsupported versions:
+
+    Deprecated: 3.11 (requires Kubernetes 1.11), 4.4 (requires Kubernetes 1.17)
+    Unsupported: 4.3 (requires Kubernetes 1.16)
+
+To install the OpenShift 4.x client (oc) and kubectl, you must first download the tar/zip files corresponding to your cluster version from mirror.openshift.com.
+
+* For OpenShift 4.x: https://mirror.openshift.com/pub/openshift-v4/clients/oc/
+
+Make sure you download the correct files for your Operational System (if using Linux, make sure you select the correct architecture). In the next subsections we present instructions on how to install `oc` and `kubectl`.
 
 ### 3.3.1. For Linux™ users:
 
-TODO
+After downloading the correct .tar file, unpack it:
+
+```bash
+tar -xvf oc.tar.gz
+```
+
+The `kubectl` and `oc` executables will be unpacked to the current directory. To add these binary files into your PATH system variable, execute the following:
+
+```bash
+mv ./oc /usr/local/bin/oc && mv ./kubectl /usr/local/bin/kubectl && echo $PATH
+```
+
+To check if the OpenShift command-line client (oc) was installed correctly, run:
+
+```bash
+oc version
+```
+
+Example output: 
+
+```bash
+Client Version: 4.6.19
+```
+
+To check if the Kubernetes command-line client (kubectl) was installed correctly, run:
+
+```bash
+kubectl version
+```
+
+Example output: 
+
+```bash
+Client Version: version.Info{Major:"1", Minor:"19", GitVersion:"v1.19.0", GitCommit:"aaa9ca377e9816a2501ce3f5dda3f889618b6a37", GitTreeState:"clean", BuildDate:"2021-02-20T03:33:06Z", GoVersion:"go1.15.5", Compiler:"gc", Platform:"linux/amd64"}
+```
 
 ### 3.3.2. For Mac users:
 
@@ -105,17 +155,8 @@ TODO
 
 TODO
 
-## 3.4. Installing the OpenShift client (oc)
+<hr>
 
-### 3.4.1. For Linux™ users:
+# Extra content
 
-TODO
-
-### 3.4.2. For Mac users:
-
-TODO
-
-### 3.4.3. For Windows™ users:
-
-TODO
-
+* [Red Hat OpenShift on IBM Cloud CLI commands](https://cloud.ibm.com/docs/openshift?topic=openshift-kubernetes-service-cli)
