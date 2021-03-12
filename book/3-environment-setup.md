@@ -124,7 +124,14 @@ mv ./oc /usr/local/bin/oc && mv ./kubectl /usr/local/bin/kubectl && echo $PATH
 
 ### 3.3.2. For Mac users:
 
-TODO
+If you use [Homebrew](https://brew.sh/), you can install `kubectl` and `oc` with the commands:
+
+```bash
+brew install kubernetes-cli
+brew install openshift-cli
+```
+
+If you prefer to download from the mirror, you can follow the exact instructions as for [Linux users](#331-for-linux-users).
 
 ### 3.3.3. For Windows™ users:
 
