@@ -51,6 +51,6 @@ To access the OpenShift Web Console you can simply click on the blue button, as 
 
 <hr>
 
-[Go to Chapter 2: Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./2-roks-at-ibm-cloud.md)
+[Go to Chapter 1: What is Red Hat OpenShift?](./1-what-is-openshift.md)
 
 [Go to Chapter 3: Environment Setup](./3-environment-setup.md)

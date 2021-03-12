@@ -28,12 +28,11 @@ The main difference from Kubernetes is that OpenShift is a full fledged product 
 
 OpenShift runs on top of the Red Hat Enterprise Linux CoreOS operating system, and instead of Docker it uses the lightweight CRI-O container engine optimized for OKD. OKD, like most Kubernetes distributions, also uses ETCD for key-value pair storage. You can check [more details about the OCP architecture at the official Red Hat documentation](https://access.redhat.com/documentation/en-us/openshift_container_platform/4.5/html/architecture/architecture-rhcos).
 
+OpenShift also has an ebedded security layer based on SELinux, that disallows the execution of containers as root users—which is one of the main vulnerabilities in containerized applications. OpenShift brings authentication and authorization resources into its object model which Kubernetes currently don't have. In general, OpenShift has a "secure-by-default" policy tailored for Enterprise applications.
 
-TO DO:
+Besides security and usability, OpenShift is heavily gueared to a DevOps culture, supporting native container image management with the use of an internal Container Image Registry and Image Streams—another type of resource in the OpenShift object model.
 
-- Security
-- Operators
-- DevOps
+>"As a catch-all container platform, Red Hat OpenShift is more than a software product. It can be the key to adopting a DevOps culture—automating routine operational tasks and standardizing environments across an app’s life cycle." - Red Hat
 
 # 1.3. Where can you use it?
 

@@ -157,14 +157,12 @@ Example output:
         GoVersion:"go1.15.5", Compiler:"gc", Platform:"linux/amd64"
     }
 
-<hr>
-
-<hr>
-
 Extra content:
 
 * Red Hat OpenShift on IBM Cloud CLI commands: https://cloud.ibm.com/docs/openshift?topic=openshift-kubernetes-service-cli
 
+<hr>
+
 [Go to Chapter 2: Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./2-roks-at-ibm-cloud.md)
 
-<!--[Go to Chapter 4: xxx](./4-xxx.md)-->
+(SOON) Go to Chapter 4: The OpenShift Object Model<!--(./4-openshift-objects.md)-->
