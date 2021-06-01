@@ -131,7 +131,7 @@ Now that we have setup our tasks, we can finally create our pipeline. We will na
 4. `apply-manifests` (custom task); and
 5. `update-deployment` (custom task).
 
-[The yaml file for the pipeline can be found here](./resources/lab-5/pipelines/pipeline.yml). We define each task parameter as a parameter for the pipeline as well:
+[The yaml file for the pipeline can be found here](./resources/lab-5/pipeline/pipeline.yml). We define each task parameter as a parameter for the pipeline as well:
 
 - `deployment-name`: for `update-deployment`
 - `git-url`: for `fetch-repository`
