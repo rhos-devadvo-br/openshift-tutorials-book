@@ -146,6 +146,6 @@ You can now add new notes at the web interface and then delete the mongodb pods.
 
 <hr>
 
-[Go to LAB 1: Creating an OpenShift Project and deploying a web application](./lab-1.md)
+[Go to LAB 1: Creating an OpenShift Project and deploying an application from the Web Console](./lab-1.md)
 
 [Go to LAB 3: DevOps with OpenShift source-to-image (s2i) and GitHub webhooks](./lab-3.md)
