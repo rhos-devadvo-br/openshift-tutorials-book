@@ -174,6 +174,4 @@ Extra content:
 
 <hr>
 
-[Go to Chapter 2: Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./2-roks-at-ibm-cloud.md)
-
-(SOON) Go to Chapter 4: The OpenShift Object Model<!--(./4-openshift-objects.md)-->
+[Go to Chapter 3: Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./3-roks-at-ibm-cloud.md)

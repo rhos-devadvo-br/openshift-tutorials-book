@@ -51,6 +51,6 @@ To access the OpenShift Web Console you can simply click on the blue button, as 
 
 <hr>
 
-[Go to Chapter 1: What is Red Hat OpenShift?](./1-what-is-openshift.md)
+[Go to Chapter 2: OpenShift Architecture](./2-openshift-architecture.md)
 
-[Go to Chapter 3: Environment Setup](./3-environment-setup.md)
+[Go to Chapter 4: Environment Setup](./4-environment-setup.md)

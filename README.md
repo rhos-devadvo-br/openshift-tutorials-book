@@ -11,11 +11,9 @@
 ## Book Chapters
 
 1. [What is Red Hat OpenShift?](./book/1-what-is-openshift.md)
-2. [Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./book/2-roks-at-ibm-cloud.md)
-3. [Environment Setup](./book/3-environment-setup.md)
-4. (SOON) The OpenShift Object Model
-5. (SOON) OpenShift Templates and Operators
-
+2. [OpenShift Architecture](./book/2-openshift-architecture.md)
+3. [Red Hat OpenShift Kubernetes Service (ROKS) at IBM Cloud](./book/3-roks-at-ibm-cloud.md)
+4. [Environment Setup](./book/4-environment-setup.md)
 ## Hands-On Labs
 
 - [LAB 1: Creating an OpenShift Project and deploying an application from the Web Console](./labs/lab-1.md)
