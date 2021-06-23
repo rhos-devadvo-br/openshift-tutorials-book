@@ -18,7 +18,7 @@
 
 ## Hands-On Labs
 
-- [LAB 1: Creating an OpenShift Project and deploying a web application](./labs/lab-1.md)
+- [LAB 1: Creating an OpenShift Project and deploying an application from the Web Console](./labs/lab-1.md)
 - [LAB 2: Scaling pods and adding a self-healing database layer with a Template](./labs/lab-2.md)
 - [LAB 3: CI/CD with OpenShift Image Streams and GitHub webhooks](./labs/lab-3.md)
 - [LAB 4: DevOps with IBM Cloud Continuous Delivery classic Pipelines]('./labs/lab-4.md)
