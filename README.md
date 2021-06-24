@@ -23,13 +23,4 @@
 - [LAB 5: DevOps with OpenShift native Tekton pipelines](./labs/lab-5.md)
 - [LAB 6: The Canary and Blue-Green release approaches](./labs/lab-6.md)
 - [LAB 7: Horizontal Pod auto-scaling](./labs/lab-7.md)
-
-- (SOON) LAB 8: Aggregating OpenShift application logs with LogDNA
-
-- (SOON) LAB 9: Managing OpenShift worker nodes auto-scaling at IBM Cloud
-
-- (SOON) LAB 10: Managing OpenShift TLS Routes and DNS with IBM Cloud Internet Services (CIS)
-
-- (SOON) LAB 11: Service Meshes
-
-- (SOON) LAB 12: Managing cluster access with IBM Cloud IAM
+- [LAB 8: Service Meshes](./labs/lab-8.md)
