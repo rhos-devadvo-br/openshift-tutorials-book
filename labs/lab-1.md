@@ -8,7 +8,7 @@
 <br>
 <br>
 
-# LAB 1: Creating an OpenShift Project and deploying an application from the Web Console
+# LAB 1: Creating an OpenShift Project and deploying an application
 
 ## 1. Introduction
 
